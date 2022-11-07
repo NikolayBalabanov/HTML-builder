@@ -3,7 +3,7 @@ const path = require('path')
 
 fs.readdir(
     path.join(__dirname, 'secret-folder'),
-    {withFileTypes: true}
+    { withFileTypes: true }
 )
     .then(dirents => {
         dirents.forEach(dirent => {
